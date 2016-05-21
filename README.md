@@ -6,11 +6,11 @@ This repository has a set of drills, projects and coding challenges, which were 
 Here is a set of exercises, projects, and challenges that I performed while I was at Tech Academy.  Please, feel free to explore my coding examples that shows how I write the code and solve problems.
 
 Languages: <br>
-•C# <br>
-•Database & SQL Server <br>
-•HTML & CSS <br>
-•JavaScript <br>
-•Python <br>
+<a href="https://github.com/ChrisW68/ClassWork/tree/master/C%23%20and%20ASP">•C# and ASP.NET<br></a>
+<a href="https://github.com/ChrisW68/ClassWork.git">•Database & SQL Server<br></a>
+<a href="https://github.com/ChrisW68/ClassWork/tree/master/HTML%20%26%20CSS">•HTML & CSS<br></a>
+<a href="https://github.com/ChrisW68/ClassWork/tree/master/Javascript">•JavaScript<br></a>
+<a href="https://github.com/ChrisW68/ClassWork/tree/master/Python">•Python</a>
 
 Software used to perform coding: <br>
 •Dreamweaver CC 2015 <br>
