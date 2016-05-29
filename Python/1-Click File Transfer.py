@@ -5,7 +5,7 @@ import wx.lib.agw.multidirdialog as MDD
 
 # This program transfers files from a predefined directories from one to another 
 
-wildcard = "All files (*.txt)|*.*"
+wildcard = "All files (*.txt)|*.*"  # Selects all files in Folder A that is a text or any other file
 
 class MyForm(wx.Frame):
     def __init__(self):
@@ -24,15 +24,15 @@ class MyForm(wx.Frame):
         
 
     def onDir(src,dst):
-        src = 'C:\\Users\\wise_\\Desktop\\Folder A'
-        dst = 'C:\\Users\\wise_\\Desktop\\Folder B'
+        src = 'C:\\Users\\wise_\\Desktop\\Folder A'  # Initial file folder where files are selected
+        dst = 'C:\\Users\\wise_\\Desktop\\Folder B'  # Final folder where files would be moved to.
 
         for file in os.listdir(src):
             print file  # testing
             src_file = os.path.join(src, file)
             dst_file = os.path.join(dst, file)
-            shutil.move(src_file, dst_file)
-            print dst_file
+            shutil.move(src_file, dst_file)     #moves files from source to destination folder
+            print dst_file                      #shows which file was moved
 
 
 
