@@ -3,6 +3,8 @@ import wx
 import shutil
 import wx.lib.agw.multidirdialog as MDD
 
+# This program transfers files from a predefined directories from one to another 
+
 wildcard = "All files (*.txt)|*.*"
 
 class MyForm(wx.Frame):
