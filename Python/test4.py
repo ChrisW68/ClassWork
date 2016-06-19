@@ -9,7 +9,7 @@ mtime=(time.time() - ctime)/3600
 if mtime>24:
     print (mtime)
 else:
-    print ("Too old")
+    print ("Is not old enough, sorry!")
     
 
 
