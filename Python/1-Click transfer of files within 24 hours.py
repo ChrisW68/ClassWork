@@ -4,6 +4,8 @@ import shutil
 import time
 import wx.lib.agw.multidirdialog as MDD
 
+#The program was design to transfer files from one designated folder to another designated folder that are 24-hours old or older.
+
 wildcard = "All files (*.txt)|*.*"
 
 class MyForm(wx.Frame):
