@@ -8,11 +8,11 @@ function showAllData() {
     $result = mysqli_query($connection, $query);  //The mysqli_query function to send information from $query in with a $connection
     
     if(!$result) {
-        die('Query FAILED!' . mysqli_query);
+        die('Query FAILED!' . mysqli_query());
     }
     while($row = mysqli_fetch_assoc($result)) {
         $id = $row['id'];
-        echo "<option value=>$id</option>";
+        echo "<option value='$id'>$id</option>";
     }
 }
 ?>

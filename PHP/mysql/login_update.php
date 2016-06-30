@@ -1,6 +1,24 @@
 <?php include "db.php"; ?>
 <?php include "functions.php"; ?>
 
+<?php
+if(isset($_POST['submit'])) {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+    $id = $_POST['id'];
+
+    $query = "UPDATE users SET ";
+    $query .="username = '$username', ";
+    $query .="password = '$password' ";
+    $query .="WHERE id = $id ";
+    
+    $result = mysqli_query($connection, $query);
+    if(!$result) {
+        die("Query Failed!" . mysqli_error($connection)); //The mysqli_error($connection) will provide more information on errors           
+    } 
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,7 +46,7 @@
                    <?php ShowAllData(); ?>
                 </select>
             </div>
-            <input type="submit" class="btn btn-primary" name="submit" value="UPDATE" value="Submit">
+            <input class="btn btn-primary" type="submit" name="submit" value="UPDATE">
         </form>    
     </div>
     
