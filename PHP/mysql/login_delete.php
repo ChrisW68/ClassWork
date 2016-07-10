@@ -1,15 +1,14 @@
 <?php include "db.php"; ?>
 <?php include "functions.php"; ?>
-<?php UpdateTable();?>
+<?php deleteRows(); ?>
 
-<<?php include "includes/header.php" ?>
+<?php include "includes/header.php" ?>
 
 <body>
 <div class="container">
     <div class="col-xs-4">
-    <h1 class="text-center">Update</h1>
-    
-       <form action="login_update.php" method="post">
+       <h1 class="text-center">Delete Records</h1>
+       <form action="login_delete.php" method="post">
            
             <div class="form-group">
                 <label for="username">Username</label>
@@ -24,7 +23,7 @@
                    <?php ShowAllData(); ?>
                 </select>
             </div>
-            <input class="btn btn-primary" type="submit" name="submit" value="UPDATE">
+            <input class="btn btn-primary" type="submit" name="submit" value="DELETE">
         </form>    
     </div>
     
