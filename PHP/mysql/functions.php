@@ -10,6 +10,16 @@ function createRows() {
     $username = $_POST['username'];
     $password = $_POST['password'];
     $connection = mysqli_connect('localhost', 'root', '', 'loginapp');
+        
+    $username = mysqli_real_escape_string($connection, $username);  //This functions escapes all the data from $username field to clean it up then assign it back, this allows the application to be more secure 
+    $password = mysqli_real_escape_string($connection, $password);  //This functions escapes all the data from $password field to clean it up then assign it back, this allows the application to be more secure
+      
+    //The below functions encrypts the user password to make it much harder to for hackers to figure out.  It will cycle thru 10 times    
+    $hashFormat = "$2y$10$";
+    $salt = "iusesomecrazystrings22";
+    $hashF_and_salt = $hashFormat . $salt;
+    $password = crypt($password, $hashF_and_salt);    
+    
     
     if($connection) {
         echo "The username: " . $username . " with the password ##### has been created." ;
