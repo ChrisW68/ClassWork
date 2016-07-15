@@ -43,6 +43,7 @@
     $result = array_diff($array1, $array2, $array3);
     
     print_r($result);
+    
 
  
 
