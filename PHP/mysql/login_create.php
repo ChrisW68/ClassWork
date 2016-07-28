@@ -5,7 +5,7 @@
 createRows();
 ?>
 
-<?php include "includes/header.php" ?>
+<?php include "includes/header.php" ?>  //This will include the header.php into the program
 <body>
 <div class="container">
     <div class="col-xs-4">
@@ -25,8 +25,4 @@ createRows();
         
     </div>
     
-</div>   
-    
-      
-</body>
-</html>
+<?php include "includes/footer.php" ?>

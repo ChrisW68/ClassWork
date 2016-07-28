@@ -2,7 +2,6 @@
 <?php include "functions.php"; ?>
 <?php include "includes/header.php" ?>
 
-
 <body>
 <div class="container">
     <div class="col-xs-4">
@@ -10,7 +9,4 @@
         <?php include readRows(); ?> 
        </pre>   
     </div>   
-</div>    
-      
-</body>
-</html>
+<?php include "includes/footer.php" ?>
