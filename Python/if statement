@@ -1,0 +1,6 @@
+x = 2
+y = 7
+z = 10
+
+if x>y:
+print(x, 'is greater than', y)
