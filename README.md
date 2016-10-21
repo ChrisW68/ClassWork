@@ -17,7 +17,10 @@ Languages: <br>
 Software used to perform coding: <br>
 •Dreamweaver CC 2015 <br>
 •JetBrain PyCharm Community Edition 5 <br>
-•Visual Studio 2008, 2012, 2015 <br>
+•Visual Studio 2008, 2012, 2015 Community<br>
+•Brackets<br>
+•Sublime Text3<br>
+
 
 
 Other Courses Taken at The Tech Academy: <br>
@@ -27,6 +30,7 @@ Other Courses Taken at The Tech Academy: <br>
 •Overview of Software Development <br>
 •Visual Studio <br>
 •Version Control & GitHub <br>
+•SCRUM and Agile <br>
 •Project Management <br>
 
 
